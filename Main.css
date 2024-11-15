@@ -62,7 +62,7 @@ nav img {
     max-width: 100%;
     font-family: 'gg sans', sans-serif;
     position: absolute;
-    width: 45%;
+    width:55%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -93,15 +93,20 @@ aside form label {
     margin-right: auto;
     padding: 5px;
     font-weight: bold;
+    max-width:80%;
 
 }
 
+aside{
+    display: flex;
+    
+}
 
 form .Login{
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    width: 90%;
+    width: 50%;
     align-items: flex-start;
     padding-bottom: 2vh;
     gap: 0.7vh; 
@@ -131,6 +136,40 @@ form [type=submit]{
     padding: 10px 20px 10px 10px;
 }
 
+form img{
+    width: 30%;
+    
+}
+
+
+.SmallText{
+color: #069BE4;
+font-size:small;
+text-decoration: none;
+}
+
+
+.SmallTextNoColor{
+    color: #7B8189;
+    font-size:small;
+    }
+    
+
+
+
+.QR-Container{
+    width: 20%; /* Adjust width as needed */
+    text-align: center;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    color: white;
+}
+
+
+
+
 
 @media screen and (min-width: 400px) {
     .form-on-top-of-BackgroundIMG {
@@ -156,10 +195,10 @@ form [type=submit]{
     }
 
     form input {
-        width: 100%; /* Keep inputs expanding across the screen */
+        width: 50%; /* Keep inputs expanding across the screen */
     }
 
     input[type="submit"] {
-        width: 110%; /* Keep submit button expanding across the screen */
+        width: 60%; /* Keep submit button expanding across the screen */
     }
 }
