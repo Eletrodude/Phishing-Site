@@ -9,6 +9,7 @@
 }
 
 
+
 html,
 body {
     padding: 0;
@@ -58,10 +59,10 @@ nav img {
 .form-on-top-of-BackgroundIMG {
     display: flex;
     flex-direction: column;
-
+    max-width: 100%;
     font-family: 'gg sans', sans-serif;
     position: absolute;
-    width: 35vw;
+    width: 45%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -102,7 +103,6 @@ form .Login{
     max-width: 400px;
     width: 90%;
     align-items: flex-start;
-  
     padding-bottom: 2vh;
     gap: 0.7vh; 
     max-width: 90%;
@@ -126,9 +126,40 @@ form [type=submit]{
     border-radius: 8px;
     box-shadow: none;
     border: none;
-    width: 50%;
-    
+    width: 100%;
+    margin-top: 3%;
     padding: 10px 20px 10px 10px;
 }
 
 
+@media screen and (min-width: 400px) {
+    .form-on-top-of-BackgroundIMG {
+        width: 60%; /* Adjust form width for larger screens */
+    }
+
+    form .Login {
+        width: 100%; /* Let form take up full width */
+    }
+
+    form input {
+        width: 100%; /* Inputs expand to 100% of the form container */
+    }
+
+    input[type="submit"] {  
+        width: 100%; /* Submit button expands to 100% of the form container */
+}
+}
+/* Media query for even larger screens (optional, for further control) */
+@media screen and (min-width: 900px) {
+    .form-on-top-of-BackgroundIMG {
+        width: 40%; /* Adjust form width on even larger screens */
+    }
+
+    form input {
+        width: 100%; /* Keep inputs expanding across the screen */
+    }
+
+    input[type="submit"] {
+        width: 110%; /* Keep submit button expanding across the screen */
+    }
+}
