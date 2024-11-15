@@ -15,7 +15,8 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
-
+    overflow-x:hidden ;
+    /*PREVENTS HORIZONTAL OVERFLOW*/
 }
 
 .background {
@@ -43,7 +44,7 @@ nav img {
     top: 5vh;
     left: 3vw;
     position: absolute;
-   margin-left: auto;
+    margin-left: auto;
     z-index: 1;
 }
 
@@ -66,29 +67,29 @@ nav img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 2;
     color: #B5BAC1;
     text-align: center;
     background: #313338;
-    padding: 32px;
-    border-radius: 8px;
+    padding-left:32px;
+    padding-bottom: 1.2rem;
+    margin-right: auto;
+    border-radius: 3px;
 }
 
 
 aside form h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
 }
 
 aside form p {
-
-    margin-top: 0.1%;
     font-size: 0.7rem;
+    margin-bottom: 1%;
 }
 
 aside form label {
     font-family: 'gg sans', sans-serif;
-
     font-size: 0.58rem;
     padding: 5px;
     font-weight: bold;
@@ -105,7 +106,7 @@ form .Login{
     width: 40%;
     align-items: flex-start;
     padding-bottom: 2vh;
-    gap: 0.7vh; 
+    gap: 0.5vh;
     max-width: 90%;
 
 }
@@ -131,6 +132,7 @@ form [type=submit]{
     margin-top: 3%;
     padding: 10px 40px 10px 10px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 form img{
@@ -154,16 +156,6 @@ text-decoration: none;
 
 
 
-.QR-Container{
-    width: 20%; /* Adjust width as needed */
-    text-align: center;
-    padding: 20px;
-    top: 50%;
-    left: 50%;
-    border-radius: 8px;
-    color: white;
-}
-
 form [type=submit]:hover {
     background-color:  #4752C4;
     transition-duration: 0.3s;
@@ -172,33 +164,50 @@ form [type=submit]:hover {
 
 
 @media screen and (min-width: 400px) {
+    nav img{
+        z-index: 1;
+    }
     .form-on-top-of-BackgroundIMG {
-        width: 60%; /* Adjust form width for larger screens */
+        width: 90%; /* Adjust form width for larger screens */
+        display: flex;
+        justify-content: center;
     }
 
     form .Login {
-        width: 100%; /* Let form take up full width */
+        width: 80%; /* Let form take up full width */
     }
 
     form input {
-        width: 100%; /* Inputs expand to 100% of the form container */
+        width: 80%; /* Inputs expand to 100% of the form container */
     }
 
     input[type="submit"] {  
-        width: 100%; /* Submit button expands to 100% of the form container */
+        width: 94%; /* Submit button expands to 100% of the form container */
 }
 }
 /* Media query for even larger screens (optional, for further control) */
 @media screen and (min-width: 900px) {
+    nav img{
+        z-index: 1;
+    }
+    .IMG-Container {
+        max-width: 100%;
+        width: fit-content%;
+        height: fit-content%;
+        display: block;
+        object-fit: cover;
+
+    }
     .form-on-top-of-BackgroundIMG {
         width: 40%; /* Adjust form width on even larger screens */
+        height: 55%;
     }
 
     form input {
-        width: 50%; /* Keep inputs expanding across the screen */
+        width: 80%; /* Keep inputs expanding across the screen */
     }
 
     input[type="submit"] {
-        width: 60%; /* Keep submit button expanding across the screen */
+        width:92%; /* Keep submit button expanding across the screen */
     }
 }
