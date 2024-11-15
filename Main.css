@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'gg sans ';
+    src: url(gg-sans-2-webfont/gg\ sans\ Regular.woff);
+    src: url(gg-sans-2-webfont/gg\ sans\ Medium.woff);
+    src: url(gg-sans-2-webfont/gg\ sans\ SemiBold.woff);
+    src: url(gg-sans-2-webfont/gg\ sans\ Bold.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-container {
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    
+    max-width: 1%;
+    max-height: 1%;
+}
+
+nav img {
+    display: inline-block;
+    width: 5%;
+    height: 5%;
+    top: 5vh;
+    left: 3vw;
+    position: absolute;
+   margin-left: auto;
+    z-index: 1;
+}
+
+.IMG-Container {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+
+.form-on-top-of-BackgroundIMG {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'gg sans', sans-serif;
+    position: absolute;
+    width: 35vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #B5BAC1;
+    text-align: center;
+    background: #313338;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+
+aside form h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+aside form p {
+
+    margin-top: 0.1%;
+    font-size: 16px;
+}
+
+aside form label {
+    font-family: 'gg sans', sans-serif;
+    margin: 0px 0px 8px;
+    font-size: 12px;
+    margin-right: auto;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+
+form .Login{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 90%;
+    align-items: flex-start;
+  
+    padding-bottom: 2vh;
+    gap: 0.7vh; 
+    max-width: 90%;
+
+}
+
+form input {
+    border-radius: 3px;
+    box-shadow: none;
+    background-color: #1E1F22;
+    color: #DBDEE1;
+    padding: 10px 40px 10px 10px;
+    width: 40%;
+    border-bottom: none;
+    border-right: none;
+    
+}
+form [type=submit]{
+    color: white;
+    background-color: #4752C4;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    width: 50%;
+    
+    padding: 10px 20px 10px 10px;
+}
+
+
