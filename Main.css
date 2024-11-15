@@ -62,7 +62,7 @@ nav img {
     max-width: 100%;
     font-family: 'gg sans', sans-serif;
     position: absolute;
-    width:55%;
+    width:40%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -83,30 +83,26 @@ aside form h1 {
 aside form p {
 
     margin-top: 0.1%;
-    font-size: 16px;
+    font-size: 0.7rem;
 }
 
 aside form label {
     font-family: 'gg sans', sans-serif;
     margin: 0px 0px 8px;
-    font-size: 12px;
-    margin-right: auto;
+    font-size: 0.58rem;
     padding: 5px;
     font-weight: bold;
     max-width:80%;
 
 }
 
-aside{
-    display: flex;
-    
-}
+
 
 form .Login{
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    width: 50%;
+
+    width: 40%;
     align-items: flex-start;
     padding-bottom: 2vh;
     gap: 0.7vh; 
@@ -120,20 +116,21 @@ form input {
     background-color: #1E1F22;
     color: #DBDEE1;
     padding: 10px 40px 10px 10px;
-    width: 40%;
+    width: 100%;
     border-bottom: none;
     border-right: none;
     
 }
 form [type=submit]{
     color: white;
-    background-color: #4752C4;
-    border-radius: 8px;
+    background-color: #5865D2;
+    border-radius: 3px;
     box-shadow: none;
     border: none;
     width: 100%;
     margin-top: 3%;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 40px 10px 10px;
+    text-align: center;
 }
 
 form img{
@@ -167,7 +164,10 @@ text-decoration: none;
     color: white;
 }
 
-
+form [type=submit]:hover {
+    background-color:  #4752C4;
+    transition-duration: 0.3s;
+}
 
 
 
